@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "w8Tw6JfbuMFJs+apVTRXRSgt3fWfnExThNCIrTR5OC1M7MVS9IeDg4sQtrfKdavMHEsa7olr7OU8I7tpXJ8EHg==",
+  "success": true,
+  "projectFilePath": "E:\\Internship\\Mars_Rovers\\Mars_Rovers\\Mars_Rovers.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pc\\.nuget\\packages\\ilmerge\\3.0.41\\ilmerge.3.0.41.nupkg.sha512"
+  ],
+  "logs": []
+}

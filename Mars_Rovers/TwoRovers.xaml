@@ -1,0 +1,64 @@
+﻿<Window x:Class="Mars_Rovers.TwoRovers"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mars_Rovers"
+        mc:Ignorable="d"
+        Title="Have fun" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FFD310D3" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid ShowGridLines="True" Margin="376,40,26,28" x:Name="TheGrid">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF763F19" Offset="0.446"/>
+                    <GradientStop Color="#FFE87D33" Offset="0.115"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition  x:Name="row0" />
+
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition x:Name="col0" />
+
+
+            </Grid.ColumnDefinitions>
+        </Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="15,58,0,0" Text="SpawnPosition" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="20"/>
+        <TextBox HorizontalAlignment="Left" Margin="167,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="spawnPositionInput" Height="18" Foreground="White">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFB06EFF" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <TextBlock HorizontalAlignment="Left" Margin="10,126,0,0" Text="Sequence of Commands" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="14"/>
+        <TextBox x:Name="commandsInput" HorizontalAlignment="Left" Margin="167,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="18" Foreground="White">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFB06EFF" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <Button Content="Execute" HorizontalAlignment="Left" Margin="297,123,0,0" VerticalAlignment="Top" Height="25" Width="64" Click="Button_Click_2"/>
+        <TextBox x:Name="outPutBox" TextWrapping="Wrap" Width="120" Margin="127,175,553,200" FontWeight="Bold" FontSize="24" TextAlignment="Center" TextDecorations="Underline" Foreground="White">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFB06EFF" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <Button Content="Spawn" HorizontalAlignment="Left" Margin="297,59,0,0" VerticalAlignment="Top" Click="Button_Click_3" Height="25" Width="64"/>
+     
+    </Grid>
+</Window>
